@@ -20,6 +20,22 @@ rhc2026-resources/
 └── ...
 ```
 
+## Talks
+
+| Talk | Speaker(s) | Date |
+|------|-----------|------|
+| [Argus SBOM Guard: gestione delle vulnerabilità a partire dagli SBOM](argus-sbom-guard/) | Matteo Vitali (trotto) | 2026-10-02 |
+| [Developers under attack - how to protect yourself](developers-under-attack/) | Christian Kühn (cy) | 2026-10-02 |
+| [Just one proof away: the cryptography behind private payments](just-one-proof-away/) | Giorgio Dell'Immagine | 2026-10-02 |
+| [MXMap Italia: National Observatory for Digital Sovereignty](mxmap-italia/) | Fabio Pietrosanti (naif) | 2026-10-02 |
+| [Cash, Card or Root? Security Archaeology of a Fiscal Cash Register](cash-card-or-root/) | Jacopo Jannone, Jacopo Moioli | 2026-10-03 |
+| [Codice Python Sicuro: Buone Pratiche e Strumenti di Analisi](codice-python-sicuro/) | Matteo Vitali (trotto) | 2026-10-03 |
+| [GNOME and Beyond Dream Tour: Discover Linux desktop sandboxing and more through its vulnerabilities](gnome-and-beyond-dream-tour/) | Edoardo Geraci | 2026-10-03 |
+| [Ghost in the SIM: Silent, Zero-Click, Over-the-Air Exploitation of a Pixel 9 Baseband OOB Read](ghost-in-the-sim/) | Lorenzo Valeriani, Pasquale Caporaso | 2026-10-03 |
+| [State Trojan: The Malware with a Warrant](state-trojan/) | Pietro Boccaletto, Francesco Infantini | 2026-10-03 |
+| [The state of systemd security sandboxing in Debian](systemd-sandboxing-in-debian/) | Marco d'Itri | 2026-10-03 |
+| [Imagine: pwning your favourite Nintendo DS game!](imagine-pwning-nintendo-ds/) | daisy | 2026-10-04 |
+
 ## Contributing
 
 1. Create a folder named after your talk or workshop (lowercase, hyphens).
