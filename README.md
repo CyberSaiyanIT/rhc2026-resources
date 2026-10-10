@@ -24,6 +24,7 @@ rhc2026-resources/
 
 | Talk | Speaker(s) | Date |
 |------|-----------|------|
+| [RomHack Camp Opening](romhack-camp-opening/) | Cyber Saiyan | 2026-10-02 |
 | [Argus SBOM Guard: gestione delle vulnerabilità a partire dagli SBOM](argus-sbom-guard/) | Matteo Vitali (trotto) | 2026-10-02 |
 | [Developers under attack - how to protect yourself](developers-under-attack/) | Christian Kühn (cy) | 2026-10-02 |
 | [Just one proof away: the cryptography behind private payments](just-one-proof-away/) | Giorgio Dell'Immagine | 2026-10-02 |
@@ -35,6 +36,7 @@ rhc2026-resources/
 | [State Trojan: The Malware with a Warrant](state-trojan/) | Pietro Boccaletto, Francesco Infantini | 2026-10-03 |
 | [The state of systemd security sandboxing in Debian](systemd-sandboxing-in-debian/) | Marco d'Itri | 2026-10-03 |
 | [Imagine: pwning your favourite Nintendo DS game!](imagine-pwning-nintendo-ds/) | daisy | 2026-10-04 |
+| [RomHack Camp Closing](romhack-camp-closing/) | Cyber Saiyan | 2026-10-04 |
 
 ## Contributing
 
