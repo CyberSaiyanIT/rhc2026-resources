@@ -1,16 +1,14 @@
 # RomHack Camp 2026 – Resources
 
 Slides, code, materials and resources related to the talks, workshops and
-activities of **RomHack Camp 2026** (Rome, October 2–4, 2026) and
-**RomHack Training 2026** (September 28 – October 1, 2026), organized by
+activities of **RomHack Camp 2026**, organized by
 [Cyber Saiyan](https://www.cybersaiyan.it).
 
 Website: <https://romhack.io>
 
 ## Contents
 
-This repository collects the material shared by speakers, trainers and
-organizers. Content is organized by topic/speaker, one folder each:
+This repository collects the material shared by speakers. Content is organized by topic/speaker, one folder each:
 
 ```
 rhc2026-resources/
