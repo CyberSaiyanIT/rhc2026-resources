@@ -23,6 +23,7 @@ rhc2026-resources/
 | Talk | Speaker(s) | Date |
 |------|-----------|------|
 | [RomHack Camp Opening](romhack-camp-opening/) | Cyber Saiyan | 2026-10-02 |
+| [Stupid Sexy Bearer Tokens: a deep dive into exploding OIDC sessions and hardening with DPoP](stupid-sexy-bearer-tokens/) | jiraky, reymerk, Giuseppe, toctou, Stefano Maistri | 2026-10-02 |
 | [Argus SBOM Guard: gestione delle vulnerabilità a partire dagli SBOM](argus-sbom-guard/) | Matteo Vitali (trotto) | 2026-10-02 |
 | [Developers under attack - how to protect yourself](developers-under-attack/) | Christian Kühn (cy) | 2026-10-02 |
 | [Just one proof away: the cryptography behind private payments](just-one-proof-away/) | Giorgio Dell'Immagine | 2026-10-02 |
