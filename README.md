@@ -20,6 +20,13 @@ rhc2026-resources/
 └── ...
 ```
 
+## Talks
+
+| Talk | Speaker(s) |
+|------|-----------|
+| [MXMap Italia: National Observatory for Digital Sovereignty](mxmap-italia/) | Fabio Pietrosanti |
+| [Cash, Card or Root? Security Archaeology of a Fiscal Cash Register](cash-card-or-root/) | Jacopo and Jacopo |
+
 ## Contributing
 
 1. Create a folder named after your talk or workshop (lowercase, hyphens).
