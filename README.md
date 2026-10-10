@@ -35,6 +35,7 @@ rhc2026-resources/
 | [Ghost in the SIM: Silent, Zero-Click, Over-the-Air Exploitation of a Pixel 9 Baseband OOB Read](ghost-in-the-sim/) | Lorenzo Valeriani, Pasquale Caporaso | 2026-10-03 |
 | [State Trojan: The Malware with a Warrant](state-trojan/) | Pietro Boccaletto, Francesco Infantini | 2026-10-03 |
 | [The state of systemd security sandboxing in Debian](systemd-sandboxing-in-debian/) | Marco d'Itri | 2026-10-03 |
+| [From Discovery to Automated Windows Malware Analysis](windows-malware-automated-analysis/) | Pizzamarinarasadd (Gianluigi Imbelli) | 2026-10-03 |
 | [Imagine: pwning your favourite Nintendo DS game!](imagine-pwning-nintendo-ds/) | daisy | 2026-10-04 |
 | [RomHack Camp Closing](romhack-camp-closing/) | Cyber Saiyan | 2026-10-04 |
 
