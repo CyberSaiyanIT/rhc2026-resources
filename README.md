@@ -35,6 +35,7 @@ rhc2026-resources/
 | [State Trojan: The Malware with a Warrant](state-trojan/) | Pietro Boccaletto, Francesco Infantini | 2026-10-03 |
 | [The state of systemd security sandboxing in Debian](systemd-sandboxing-in-debian/) | Marco d'Itri | 2026-10-03 |
 | [From Discovery to Automated Windows Malware Analysis](windows-malware-automated-analysis/) | Pizzamarinarasadd (Gianluigi Imbelli) | 2026-10-03 |
+| [Command-Line Alchemy: Turning Scripts into Superpower](command-line-alchemy/) | Kirils Solovjovs | 2026-10-03 |
 | [Imagine: pwning your favourite Nintendo DS game!](imagine-pwning-nintendo-ds/) | daisy | 2026-10-04 |
 | [Chain Reaction - From Isolated Vulnerabilities to Full System Compromise](chain-reaction/) | Rana Khalil | 2026-10-04 |
 | [RomHack Camp Closing](romhack-camp-closing/) | Cyber Saiyan | 2026-10-04 |
