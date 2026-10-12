@@ -26,6 +26,7 @@ rhc2026-resources/
 | [Stupid Sexy Bearer Tokens: a deep dive into exploding OIDC sessions and hardening with DPoP](stupid-sexy-bearer-tokens/) | jiraky, reymerk, Giuseppe, toctou, Stefano Maistri | 2026-10-02 |
 | [Argus SBOM Guard: gestione delle vulnerabilità a partire dagli SBOM](argus-sbom-guard/) | Matteo Vitali (trotto) | 2026-10-02 |
 | [Developers under attack - how to protect yourself](developers-under-attack/) | Christian Kühn (cy) | 2026-10-02 |
+| [MovementHound: You might be missing something, move it!](movementhound/) | Umberto Micillo (polair) | 2026-10-02 |
 | [Just one proof away: the cryptography behind private payments](just-one-proof-away/) | Giorgio Dell'Immagine | 2026-10-02 |
 | [MXMap Italia: National Observatory for Digital Sovereignty](mxmap-italia/) | Fabio Pietrosanti (naif) | 2026-10-02 |
 | [Cash, Card or Root? Security Archaeology of a Fiscal Cash Register](cash-card-or-root/) | Jacopo Jannone, Jacopo Moioli | 2026-10-03 |
