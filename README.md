@@ -28,6 +28,7 @@ rhc2026-resources/
 | [Developers under attack - how to protect yourself](developers-under-attack/) | Christian Kühn (cy) | 2026-10-02 |
 | [MovementHound: You might be missing something, move it!](movementhound/) | Umberto Micillo (polair) | 2026-10-02 |
 | [2038: The Next Epochalypse — Breaking time before it breaks us](2038-next-epochalypse/) | Lorenzo Dina (joecondo) | 2026-10-02 |
+| [The Trojan Pop-Up; Modern Threat Actor Uses of Advertising](the-trojan-pop-up/) | Sean Juroviesky | 2026-10-02 |
 | [Just one proof away: the cryptography behind private payments](just-one-proof-away/) | Giorgio Dell'Immagine | 2026-10-02 |
 | [MXMap Italia: National Observatory for Digital Sovereignty](mxmap-italia/) | Fabio Pietrosanti (naif) | 2026-10-02 |
 | [Cash, Card or Root? Security Archaeology of a Fiscal Cash Register](cash-card-or-root/) | Jacopo Jannone, Jacopo Moioli | 2026-10-03 |
@@ -41,6 +42,7 @@ rhc2026-resources/
 | [Command-Line Alchemy: Turning Scripts into Superpower](command-line-alchemy/) | Kirils Solovjovs | 2026-10-03 |
 | [Imagine: pwning your favourite Nintendo DS game!](imagine-pwning-nintendo-ds/) | daisy | 2026-10-04 |
 | [Chain Reaction - From Isolated Vulnerabilities to Full System Compromise](chain-reaction/) | Rana Khalil | 2026-10-04 |
+| [When IaC goes wrong](when-iac-goes-wrong/) | Sean Juroviesky | 2026-10-04 |
 | [RomHack Camp Closing](romhack-camp-closing/) | Cyber Saiyan | 2026-10-04 |
 
 ## Contributing
