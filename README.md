@@ -29,6 +29,7 @@ rhc2026-resources/
 | [MovementHound: You might be missing something, move it!](movementhound/) | Umberto Micillo (polair) | 2026-10-02 |
 | [2038: The Next Epochalypse — Breaking time before it breaks us](2038-next-epochalypse/) | Lorenzo Dina (joecondo) | 2026-10-02 |
 | [The Trojan Pop-Up; Modern Threat Actor Uses of Advertising](the-trojan-pop-up/) | Sean Juroviesky | 2026-10-02 |
+| [Stop Injecting, Start Blending: A KISS Approach to Malware Development](stop-injecting-start-blending/) | Julien Bedel | 2026-10-02 |
 | [Just one proof away: the cryptography behind private payments](just-one-proof-away/) | Giorgio Dell'Immagine | 2026-10-02 |
 | [MXMap Italia: National Observatory for Digital Sovereignty](mxmap-italia/) | Fabio Pietrosanti (naif) | 2026-10-02 |
 | [Cash, Card or Root? Security Archaeology of a Fiscal Cash Register](cash-card-or-root/) | Jacopo Jannone, Jacopo Moioli | 2026-10-03 |
