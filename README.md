@@ -46,6 +46,14 @@ rhc2026-resources/
 | [When IaC goes wrong](when-iac-goes-wrong/) | Sean Juroviesky | 2026-10-04 |
 | [RomHack Camp Closing](romhack-camp-closing/) | Cyber Saiyan | 2026-10-04 |
 
+## Workshops, CTFs and other resources
+
+Material that is not a regular talk.
+
+| Resource | Author(s) | Date |
+|----------|-----------|------|
+| [Meethack: CI/CD security workshop (Pwn the Pipeline), NFC "Cyber Car Wash" CTF and JANUS AI CTF](meethack/) | Meethack | 2026-10-02 |
+
 ## Contributing
 
 1. Create a folder named after your talk or workshop (lowercase, hyphens).
