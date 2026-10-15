@@ -30,6 +30,7 @@ rhc2026-resources/
 | [2038: The Next Epochalypse — Breaking time before it breaks us](2038-next-epochalypse/) | Lorenzo Dina (joecondo) | 2026-10-02 |
 | [The Trojan Pop-Up; Modern Threat Actor Uses of Advertising](the-trojan-pop-up/) | Sean Juroviesky | 2026-10-02 |
 | [Stop Injecting, Start Blending: A KISS Approach to Malware Development](stop-injecting-start-blending/) | Julien Bedel | 2026-10-02 |
+| [Why I've to waste my (precious) time on cryptography?](why-waste-time-on-cryptography/) | Andrea Pompili | 2026-10-02 |
 | [Just one proof away: the cryptography behind private payments](just-one-proof-away/) | Giorgio Dell'Immagine | 2026-10-02 |
 | [MXMap Italia: National Observatory for Digital Sovereignty](mxmap-italia/) | Fabio Pietrosanti (naif) | 2026-10-02 |
 | [Cash, Card or Root? Security Archaeology of a Fiscal Cash Register](cash-card-or-root/) | Jacopo Jannone, Jacopo Moioli | 2026-10-03 |
@@ -39,6 +40,8 @@ rhc2026-resources/
 | [State Trojan: The Malware with a Warrant](state-trojan/) | Pietro Boccaletto, Francesco Infantini | 2026-10-03 |
 | [The state of systemd security sandboxing in Debian](systemd-sandboxing-in-debian/) | Marco d'Itri | 2026-10-03 |
 | [From Discovery to Automated Windows Malware Analysis](windows-malware-automated-analysis/) | Pizzamarinarasadd (Gianluigi Imbelli) | 2026-10-03 |
+| [From Hero to Zero: The FatalNoise neverending story](from-hero-to-zero-fatalnoise/) | Andrea Pompili | 2026-10-03 |
+| [The miracle of Plane and Sprite Multiplication](plane-and-sprite-multiplication/) | Andrea Pompili | 2026-10-03 |
 | [Using Temporal‑Spatial 3D CNN Features to Enhance OSINT‑Based Profiling and Individual Traceability](temporal-spatial-3d-cnn-osint/) | Reza (rezaduty) | 2026-10-03 |
 | [Command-Line Alchemy: Turning Scripts into Superpower](command-line-alchemy/) | Kirils Solovjovs | 2026-10-03 |
 | [Imagine: pwning your favourite Nintendo DS game!](imagine-pwning-nintendo-ds/) | daisy | 2026-10-04 |
