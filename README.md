@@ -31,6 +31,7 @@ rhc2026-resources/
 | [The Trojan Pop-Up; Modern Threat Actor Uses of Advertising](the-trojan-pop-up/) | Sean Juroviesky | 2026-10-02 |
 | [Stop Injecting, Start Blending: A KISS Approach to Malware Development](stop-injecting-start-blending/) | Julien Bedel | 2026-10-02 |
 | [Why I've to waste my (precious) time on cryptography?](why-waste-time-on-cryptography/) | Andrea Pompili | 2026-10-02 |
+| [automated vulnerability scanning in software development](automated-vulnerability-scanning/) | Elmar Lecher (mc.fly) | 2026-10-02 |
 | [Just one proof away: the cryptography behind private payments](just-one-proof-away/) | Giorgio Dell'Immagine | 2026-10-02 |
 | [MXMap Italia: National Observatory for Digital Sovereignty](mxmap-italia/) | Fabio Pietrosanti (naif) | 2026-10-02 |
 | [Cash, Card or Root? Security Archaeology of a Fiscal Cash Register](cash-card-or-root/) | Jacopo Jannone, Jacopo Moioli | 2026-10-03 |
