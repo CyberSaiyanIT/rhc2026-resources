@@ -57,6 +57,7 @@ Material that is not a regular talk.
 | Resource | Author(s) | Date |
 |----------|-----------|------|
 | [Meethack: CI/CD security workshop (Pwn the Pipeline), NFC "Cyber Car Wash" CTF and JANUS AI CTF](meethack/) | Meethack | 2026-10-02 |
+| ["Don't crash" challenges walkthrough](do-not-crash/) (workshop) | Max 'Sparrrgh' Bellia | 2026-10-03 |
 
 ## Contributing
 
