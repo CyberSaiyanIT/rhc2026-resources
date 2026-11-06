@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+config/workshop.json
+config/roster.csv
+config/roster.local.csv
+.workshop/
+exports/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.auto.tfvars.json
+!*.tfvars.example
+.terraform/
+*.retry
+
+# Required by frozen dependency installs and Docker builds.
+!uv.lock

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "romhack-workshop"
+version = "1.0.0"
+description = "Keep caLLM and Let It Block: a local incident-response automation workshop"
+requires-python = ">=3.12"
+dependencies = ["fastapi==0.121.2", "uvicorn==0.38.0", "httpx==0.28.1"]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.2"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/romhack"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

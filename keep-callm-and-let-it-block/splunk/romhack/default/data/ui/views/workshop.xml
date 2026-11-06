@@ -1,0 +1,10 @@
+<dashboard version="1.1" theme="light">
+  <label>RomHack workshop</label>
+  <description>Events and intelligence are simulated.</description>
+  <row>
+    <panel><single><title>Events in the last 15 minutes</title><search><query>index=romhack | dedup event_id | stats count</query><earliest>-15m</earliest><latest>now</latest></search></single></panel>
+    <panel><single><title>WAF signature matches</title><search><query>index=romhack sourcetype=romhack:waf managed_match=true | dedup event_id | stats count</query><earliest>-15m</earliest><latest>now</latest></search></single></panel>
+  </row>
+  <row><panel><table><title>Source IP investigation</title><search><query>index=romhack | dedup event_id | stats count values(path) as paths values(status) as HTTP_status values(action) as actions by src_ip run_id</query><earliest>-15m</earliest><latest>now</latest></search></table></panel></row>
+  <row><panel><table><title>Remediation audit</title><search><query>index=romhack sourcetype=romhack:audit | dedup event_id | table _time src_ip action status run_id reasoning</query><earliest>-15m</earliest><latest>now</latest></search></table></panel></row>
+</dashboard>
