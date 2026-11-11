@@ -1,0 +1,52 @@
+{
+  "id": "romhackBase00001",
+  "name": "RomHack · Base",
+  "active": false,
+  "nodes": [
+    {
+      "id": "df9a4b01200c5ab8",
+      "name": "Splunk alert",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "romhack",
+        "authentication": "none",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "webhookId": "0b2758cf-bec8-5a98-83db-b7433e853233"
+    },
+    {
+      "id": "b0afe42af0245f5b",
+      "name": "NoOp",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        260,
+        0
+      ],
+      "parameters": {}
+    }
+  ],
+  "connections": {
+    "Splunk alert": {
+      "main": [
+        [
+          {
+            "node": "NoOp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

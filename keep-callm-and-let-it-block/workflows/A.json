@@ -1,0 +1,169 @@
+{
+  "id": "romhackA00000001",
+  "name": "RomHack · A",
+  "active": false,
+  "nodes": [
+    {
+      "id": "3159b0b4d14451d1",
+      "name": "Splunk alert",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "romhack",
+        "authentication": "none",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "webhookId": "0b2758cf-bec8-5a98-83db-b7433e853233"
+    },
+    {
+      "id": "59cab3d016075716",
+      "name": "Parse alert",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        260,
+        0
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "75b18c9b93b95d5f",
+              "name": "run_id",
+              "value": "={{ $json.body.run_id }}",
+              "type": "string"
+            },
+            {
+              "id": "b4eac88855ba505c",
+              "name": "event_id",
+              "value": "={{ $json.body.event_id }}",
+              "type": "string"
+            },
+            {
+              "id": "eb6c0cb55a975dda",
+              "name": "src_ip",
+              "value": "={{ $json.body.src_ip }}",
+              "type": "string"
+            },
+            {
+              "id": "3da3634a7f7256ee",
+              "name": "scenario",
+              "value": "={{ $json.body.scenario }}",
+              "type": "string"
+            },
+            {
+              "id": "9b552c14bb9650f7",
+              "name": "count",
+              "value": "={{ $json.body.count }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "6cb5e0e112b757e9",
+      "name": "Goku - Block Source IP",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        520,
+        0
+      ],
+      "parameters": {
+        "url": "http://workshop:8000/api/remediations",
+        "options": {
+          "timeout": 30000
+        },
+        "method": "POST",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"action\": \"block\",\n  \"src_ip\": \"{{ $('Parse alert').first().json.src_ip }}\",\n  \"run_id\": \"{{ $('Parse alert').first().json.run_id }}\",\n  \"idempotency_key\": \"{{ $('Parse alert').first().json.event_id }}\"\n}"
+      }
+    },
+    {
+      "id": "caddaf85ef3059bb",
+      "name": "Audit block request",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        780,
+        0
+      ],
+      "parameters": {
+        "url": "http://workshop:8000/api/audit",
+        "options": {
+          "timeout": 30000
+        },
+        "method": "POST",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "run_id",
+              "value": "={{ $('Parse alert').first().json.run_id }}"
+            },
+            {
+              "name": "src_ip",
+              "value": "={{ $('Parse alert').first().json.src_ip }}"
+            },
+            {
+              "name": "decision",
+              "value": "block"
+            },
+            {
+              "name": "reasoning",
+              "value": "Workshop phase A decision"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Splunk alert": {
+      "main": [
+        [
+          {
+            "node": "Parse alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse alert": {
+      "main": [
+        [
+          {
+            "node": "Goku - Block Source IP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Goku - Block Source IP": {
+      "main": [
+        [
+          {
+            "node": "Audit block request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "executionTimeout": 1200
+  }
+}

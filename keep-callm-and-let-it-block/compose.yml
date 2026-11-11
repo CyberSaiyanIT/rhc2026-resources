@@ -1,0 +1,79 @@
+# Keep caLLM and Let It Block: the whole lab on your laptop.
+# Start: docker compose up -d   ·   Stop: docker compose down   ·   Wipe: docker compose down -v
+# Every port listens on 127.0.0.1 only, so the fixed passwords below never leave your machine.
+name: romhack
+
+x-n8n: &n8n
+  image: docker.n8n.io/n8nio/n8n:stable@sha256:9f693fd5565539efd5e75ad168526c8041a6af516d9e50bc4d9cb1c9c5031523
+  environment:
+    N8N_HOST: localhost
+    N8N_PROTOCOL: http
+    N8N_SECURE_COOKIE: 'false'
+    # Must match the workshop's n8n_public_url, or C2/C3 approval links are refused.
+    WEBHOOK_URL: http://localhost:5678/
+    N8N_EDITOR_BASE_URL: http://localhost:5678/
+    N8N_DIAGNOSTICS_ENABLED: 'false'
+    N8N_VERSION_NOTIFICATIONS_ENABLED: 'false'
+    N8N_PERSONALIZATION_ENABLED: 'false'
+    N8N_BLOCK_ENV_ACCESS_IN_NODE: 'true'
+    N8N_RUNNERS_ENABLED: 'true'
+    GENERIC_TIMEZONE: Europe/Rome
+  volumes:
+    - n8n-data:/home/node/.n8n
+    - ./workflows:/workflows:ro
+
+services:
+  # Splunk Enterprise (free 60-day trial license). amd64 only: on Apple Silicon
+  # Docker runs it through emulation, so the first start takes several minutes.
+  splunk:
+    image: splunk/splunk:9.4.1@sha256:6e7ef6ff9c2051d2281dce1dc6619cd5b4b5c1b40316f22e4c6627c51d0a1c83
+    platform: linux/amd64
+    restart: unless-stopped
+    ports: ['127.0.0.1:8000:8000']
+    environment:
+      SPLUNK_START_ARGS: --accept-license
+      SPLUNK_GENERAL_TERMS: --accept-sgt-current-at-splunk-com
+      SPLUNK_PASSWORD: RomHack2026!
+    volumes:
+      - ./splunk/romhack:/opt/splunk/etc/apps/romhack
+      # Splunk refuses Docker Desktop bind mounts for its own data, hence named volumes.
+      - splunk-etc:/opt/splunk/etc
+      - splunk-var:/opt/splunk/var
+      # System scope, so the stock webhook alert action keeps its script.
+      - ./splunk/system/alert_actions.conf:/opt/splunk/etc/system/local/alert_actions.conf
+
+  # Portal (:8080), workshop API, simulated website (:8081), traffic and alert delivery.
+  workshop:
+    build: .
+    image: romhack-workshop:local
+    restart: unless-stopped
+    ports: ['127.0.0.1:8080:8000', '127.0.0.1:8081:8081']
+    environment:
+      SPLUNK_PASSWORD: RomHack2026!
+    volumes:
+      - workshop-data:/data
+      - ./workflows:/workflows:ro
+
+  # One-shot: loads the starter workflow on the first start, never overwrites your edits.
+  n8n-import:
+    <<: *n8n
+    entrypoint: [sh, -c]
+    command:
+      - n8n export:workflow --id=romhackBase00001 --output=/tmp/existing.json >/dev/null 2>&1
+        || n8n import:workflow --input=/workflows/Base.json
+    restart: 'no'
+
+  n8n:
+    <<: *n8n
+    restart: unless-stopped
+    ports: ['127.0.0.1:5678:5678']
+    # Lets n8n reach a model server on your laptop (for example Ollama) at host.docker.internal.
+    extra_hosts: ['host.docker.internal:host-gateway']
+    depends_on:
+      n8n-import: {condition: service_completed_successfully}
+
+volumes:
+  splunk-etc:
+  splunk-var:
+  workshop-data:
+  n8n-data:

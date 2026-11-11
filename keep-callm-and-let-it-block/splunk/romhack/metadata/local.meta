@@ -1,0 +1,8 @@
+[]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = admin
+[savedsearches]
+owner = admin
+access = read : [ admin ], write : [ admin ]
+export = system

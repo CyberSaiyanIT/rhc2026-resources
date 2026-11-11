@@ -1,0 +1,43 @@
+{
+  "fixture_version": 2,
+  "simulated": true,
+  "profiles": {
+    "198.51.100.10": {
+      "scenario": "malicious scan",
+      "score": 95,
+      "reports": 47,
+      "network": "untrusted hosting",
+      "scanner": true,
+      "shared_nat": false
+    },
+    "198.51.100.20": {
+      "scenario": "shared NAT false positive",
+      "score": 45,
+      "reports": 3,
+      "network": "camp shared NAT",
+      "scanner": false,
+      "shared_nat": true
+    },
+    "198.51.100.30": {
+      "scenario": "benign",
+      "score": 0,
+      "reports": 0,
+      "network": "workshop benign client",
+      "scanner": false,
+      "shared_nat": false
+    },
+    "198.51.100.99": {
+      "scenario": "intelligence unavailable",
+      "http_status": 503
+    },
+    "198.51.100.40": {
+      "scenario": "corporate VPN login recovery",
+      "score": 95,
+      "reports": 47,
+      "report_context": "Historical abuse reports associated with this shared exit IP; reputation does not describe the current session.",
+      "network": "shared corporate VPN egress",
+      "scanner": false,
+      "shared_nat": true
+    }
+  }
+}
